@@ -80,7 +80,7 @@ const ProductPage = () => {
         <div className="md:border-r-[1.5px] md:w-fit w-full border-(--border-color) dark:border-(--dark-border-color)">
           <div
             {...swipeHandlers}
-            className="py-5 px-10 md:px-20  w-full flex items-center justify-center border-b-[1.5px] border-(--border-color) dark:border-(--dark-border-color)"
+            className="py-5 px-10 md:py-0 md:px-20  w-full flex items-center justify-center border-b-[1.5px] border-(--border-color) dark:border-(--dark-border-color)"
           >
             <img
               src={product[preview]}
@@ -88,7 +88,7 @@ const ProductPage = () => {
               draggable={false}
               className={`transition-opacity duration-1000 ease-in-out ${
                 isVisible ? "opacity-100" : "opacity-0"
-              } w-96 h-96 md:h-80 md:w-80 object-cover `}
+              } w-96 h-96 md:h-80 md:w-80 object-cover md:object-contain `}
             />
           </div>
 
