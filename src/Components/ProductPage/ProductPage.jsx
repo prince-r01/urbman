@@ -80,7 +80,7 @@ const ProductPage = () => {
         <div className="md:border-r-[1.5px] md:w-fit w-full border-(--border-color) dark:border-(--dark-border-color)">
           <div
             {...swipeHandlers}
-            className="py-5 px-10 md:py-0 md:px-20  w-full flex items-center justify-center border-b-[1.5px] border-(--border-color) dark:border-(--dark-border-color)"
+            className="relative py-5 px-10 md:py-0 md:px-20  w-full flex items-center justify-center border-b-[1.5px] border-(--border-color) dark:border-(--dark-border-color)"
           >
             <img
               src={product[preview]}
@@ -90,6 +90,8 @@ const ProductPage = () => {
                 isVisible ? "opacity-100" : "opacity-0"
               } w-96 h-96 md:h-80 md:w-80 object-cover md:object-contain `}
             />
+            <button className="hidden md:flex rounded-full bg-[#86868216] hover:bg-[#86868257] absolute left-6 p-2 "><img src={assets.arrow} onClick={prevSlide} alt="" className="opacity-70 dark:invert h-7 cursor-pointer" /></button>
+            <button className="hidden md:flex rounded-full bg-[#86868216] hover:bg-[#86868257] absolute right-6 p-2"><img src={assets.arrow} onClick={nextSlide} alt="" className="opacity-70 dark:invert rotate-180  h-7 cursor-pointer" /></button>
           </div>
 
           {/* Image album for Smaller Screens */}

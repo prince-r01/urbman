@@ -14,6 +14,7 @@ import truck from './truck.png';
 import checkmark from './checkmark.png';
 import emptybag from './empty-bag.png';
 import empty_box from './empty-box.png';
+import arrow from './arrow.png'
 import j1 from './Jackets/j1.png';
 import j11 from './Jackets/j11.png';
 import j12 from './Jackets/j12.png';
@@ -125,6 +126,7 @@ import sh33 from './Shorts/sh33.png';
 
 
 export const assets = {
+   arrow,
    asterisk,
    cart,
    sun,
